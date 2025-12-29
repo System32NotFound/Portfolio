@@ -1,0 +1,55 @@
+.header {
+  position: sticky;
+  top: 0;
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--border);
+  z-index: 100;
+}
+
+.inner {
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: 14px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 14px;
+  border: 1px solid var(--border);
+  text-decoration: none;
+  font-weight: 800;
+  background: linear-gradient(180deg, var(--accent-soft), transparent);
+}
+
+.navList {
+  list-style: none;
+  display: flex;
+  gap: 14px;
+  padding: 0;
+  margin: 0;
+  flex-wrap: wrap;
+}
+
+.navLink {
+  text-decoration: none;
+  padding: 8px 10px;
+  border-radius: 12px;
+}
+
+.navLink:hover {
+  background: rgba(122, 167, 255, 0.14);
+}
+
+.navLink:focus-visible {
+  outline: 2px solid rgba(47, 107, 255, 0.45);
+  outline-offset: 2px;
+}

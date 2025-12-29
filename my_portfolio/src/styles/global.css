@@ -1,0 +1,65 @@
+:root {
+  color-scheme: light;
+
+  /* Typography */
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial,
+    sans-serif;
+  line-height: 1.5;
+
+  /* Layout */
+  --container: 1040px;
+  --radius: 16px;
+
+  /* Pastel theme */
+  --bg: #fbfbfd;
+  --surface: #ffffff;
+  --text: #0f172a;
+  --muted: #475569;
+
+  --border: rgba(15, 23, 42, 0.1);
+
+  /* Accent (pastel blue) */
+  --accent: #7aa7ff;
+  --accent-strong: #2f6bff;
+  --accent-soft: rgba(122, 167, 255, 0.18);
+
+  /* Secondary (pastel mint) */
+  --mint: #7bdcb5;
+  --mint-soft: rgba(123, 220, 181, 0.22);
+
+  /* Shadow */
+  --shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  color: var(--text);
+  background: radial-gradient(
+      900px 500px at 15% 0%,
+      var(--accent-soft),
+      transparent 55%
+    ),
+    radial-gradient(900px 500px at 85% 10%, var(--mint-soft), transparent 55%),
+    var(--bg);
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: inherit;
+}
+
+/* Better focus visibility without looking ugly */
+:focus-visible {
+  outline: 3px solid rgba(47, 107, 255, 0.45);
+  outline-offset: 2px;
+}
