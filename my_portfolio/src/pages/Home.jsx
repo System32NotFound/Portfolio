@@ -4,10 +4,12 @@ import ProjectCard from "../components/ProjectCard";
 import { projects } from "../data/projects";
 import { skillGroups } from "../data/skills";
 import styles from "./Home.module.css";
+import { experiences } from "../data/experience";
+import ExperienceCard from "../components/ExperienceCard";
 
 export default function Home() {
   return (
-    <div id="top">
+    <div id="top" className={styles.page}>
       <SkipLink />
       <Header />
 
@@ -44,12 +46,26 @@ export default function Home() {
             ))}
           </div>
         </section>
+            <section id="experience" className={styles.section} aria-labelledby="experience-title">
+        <h2 id="experience-title" className={styles.sectionTitle}>
+          Experience
+        </h2>
+        <p className={styles.sectionIntro}>
+          Roles that shaped how I build, collaborate, and ship.
+        </p>
 
+        <div className={styles.experienceList}>
+          {experiences.map((exp) => (
+            <ExperienceCard key={exp.id} experience={exp} />
+          ))}
+        </div>
+      </section>
         <section
           id="skills"
           className={styles.section}
           aria-labelledby="skills-title"
         >
+          
           <h2 id="skills-title" className={styles.sectionTitle}>
             Skills
           </h2>

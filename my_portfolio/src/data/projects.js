@@ -1,24 +1,5 @@
 export const projects = [
 
-  {
-    slug: "ocr-licensing-platform",
-    title: "OCR Powered Licensing Platform",
-    year: "2022",
-    role: "Full stack developer",
-    description:
-      "Built a licensing application platform with OCR assisted data entry to reduce manual input and improve data accuracy.",
-    impact: "Improved extracted data accuracy by 25 percent and reduced manual entry by 60 percent.",
-    highlights: [
-      "Designed REST APIs and integrated OCR processing into the workflow",
-      "Implemented validation and error handling to reduce rework",
-      "Delivered in a Scrum team with sprint planning and backlog refinement",
-    ],
-    tech: ["Laravel", "MySQL", "REST API", "OpenCV", "Tesseract"],
-    links: {
-      live: null,
-      repo: null,
-    },
-  },
 {
     slug: "sentiment-analysis-dashboard",
     title: "Sentiment Analysis Dashboard",

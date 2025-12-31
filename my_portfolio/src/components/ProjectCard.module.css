@@ -63,7 +63,7 @@
   border-radius: 999px;
   padding: 6px 10px;
   font-size: 13px;
-  background: rgba(122, 167, 255, 0.1);
+  background: rgba(95, 168, 255, 0.12);
 }
 
 .links {
@@ -82,10 +82,9 @@
 }
 
 .link:hover {
-  border-color: rgba(47, 107, 255, 0.35);
-  background: rgba(122, 167, 255, 0.12);
+  border-color: rgba(95, 168, 255, 0.5);
+  background: rgba(95, 168, 255, 0.12);
 }
-
 .linkMuted {
   border: 1px solid var(--border);
   border-radius: 12px;

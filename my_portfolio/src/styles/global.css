@@ -1,34 +1,33 @@
 :root {
   color-scheme: light;
 
-  /* Typography */
   font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial,
     sans-serif;
   line-height: 1.5;
 
-  /* Layout */
   --container: 1040px;
-  --radius: 16px;
+  --radius: 18px;
 
-  /* Pastel theme */
-  --bg: #fbfbfd;
+  /* Base */
+  --bg: #0f172a;; /* deep navy page background */
   --surface: #ffffff;
   --text: #0f172a;
   --muted: #475569;
 
-  --border: rgba(15, 23, 42, 0.1);
+  --border: rgba(15, 23, 42, 0.12);
+  --shadow: 0 14px 40px rgba(2, 6, 23, 0.18);
 
-  /* Accent (pastel blue) */
-  --accent: #7aa7ff;
-  --accent-strong: #2f6bff;
-  --accent-soft: rgba(122, 167, 255, 0.18);
+  /* Navy scale */
+  --navy-900: #0b1220;
+  --navy-800: #0f1a2e;
+  --navy-700: #162447;
 
-  /* Secondary (pastel mint) */
-  --mint: #7bdcb5;
-  --mint-soft: rgba(123, 220, 181, 0.22);
+  /* Accent */
+  --accent: #5fa8ff;
+  --accent-soft: rgba(95, 168, 255, 0.18);
 
-  /* Shadow */
-  --shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+  /* Secondary accent */
+  --teal-soft: rgba(94, 234, 212, 0.18);
 }
 
 *,
@@ -39,14 +38,23 @@
 
 body {
   margin: 0;
-  color: var(--text);
-  background: radial-gradient(
-      900px 500px at 15% 0%,
-      var(--accent-soft),
-      transparent 55%
+  background:
+    radial-gradient(
+      900px 600px at 50% -10%,
+      rgba(95, 168, 255, 0.18),
+      transparent 65%
     ),
-    radial-gradient(900px 500px at 85% 10%, var(--mint-soft), transparent 55%),
-    var(--bg);
+    radial-gradient(
+      900px 600px at 50% 30%,
+      rgba(94, 234, 212, 0.14),
+      transparent 70%
+    ),
+    linear-gradient(
+      180deg,
+      #0f172a 0%,
+      #0b1220 100%
+    );
+  color: var(--text);
 }
 
 img {
@@ -58,8 +66,7 @@ a {
   color: inherit;
 }
 
-/* Better focus visibility without looking ugly */
 :focus-visible {
-  outline: 3px solid rgba(47, 107, 255, 0.45);
+  outline: 3px solid rgba(95, 168, 255, 0.55);
   outline-offset: 2px;
 }
