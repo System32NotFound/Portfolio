@@ -25,4 +25,19 @@ export const experiences = [
     ],
     tech: ["JavaScript", "Web UI", "Responsive Design"],
   },
+  {
+    id: "linearonline-dev-2020",
+    company: "Linear Online ECommerce",
+    title: "Network Engineer",
+    location: "Malaysia",
+    dates: "Jan 2020 to Jun 2020",
+    bullets: [
+      "Configured and deployed network infrastructure including routers and switches.",
+      "Monitored and analyzed network performance data, identifying anomalies and trends in system performance to ensure reliable infrastructure.",
+      "Implemented security protocols and access controls to protect company network resources.",
+      "Performed regular system monitoring and optimization to ensure reliable network performance.",
+      
+    ],
+    tech: ["Network Analytics", "Firewall", "Bash", "C#"],
+  },
 ];

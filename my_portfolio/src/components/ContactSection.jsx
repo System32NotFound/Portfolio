@@ -21,7 +21,7 @@ export default function ContactSection() {
             Contact
           </h2>
           <p className="mt-4 text-white/70">
-            Best way to reach me.
+            Open to entry level software development, web development, and data focused roles.
           </p>
 
           <div className="mt-10 flex flex-wrap gap-4">

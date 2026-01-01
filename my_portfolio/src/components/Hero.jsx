@@ -26,7 +26,8 @@ export default function Hero() {
             transition={{ duration: 0.8, ease: baseEase }}
             className="text-sm font-medium tracking-wide text-white/70"
           >
-            Entry level frontend developer
+            Entry level software developer with experience across web development, data analysis, and production ready projects.
+
           </motion.p>
 
           {/* Name: letter reveal */}
@@ -64,8 +65,7 @@ export default function Hero() {
             }}
             className="mt-8 max-w-2xl text-lg leading-relaxed text-white/80 sm:text-xl"
           >
-            I build clean, accessible interfaces with React, focusing on
-            performance, clarity, and practical user experience.
+            Experience across React apps, data dashboards, and applied machine learning projects.
           </motion.p>
 
           {/* Actions */}

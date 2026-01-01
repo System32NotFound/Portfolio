@@ -22,24 +22,26 @@ export default function AboutSection() {
           </h2>
 
           <p className="mt-6 text-lg leading-relaxed text-white/80">
-            I’m a fresh computer science graduate based in Perth, focused on frontend
-            development and building interfaces that feel clear, responsive, and accessible.
+            I’m a fresh computer science graduate based in Perth, seeking an entry level software development role.
           </p>
 
           <p className="mt-6 text-lg leading-relaxed text-white/80">
-            I enjoy turning complex requirements into clean UI, with an emphasis on
-            performance, usability, and thoughtful interaction design.
+            I’ve worked across web development and data analysis, building React applications, dashboards, and analytical tooling. I care about writing clear code, shipping practical solutions, and understanding the systems I work on.
+
           </p>
 
           <div className="mt-10 flex flex-wrap gap-3">
             <span className="rounded-full border border-white/20 bg-white/5 px-4 py-2 text-sm text-white/85">
-              React
+              Software Development
             </span>
             <span className="rounded-full border border-white/20 bg-white/5 px-4 py-2 text-sm text-white/85">
-              Accessibility
+              Data Analysis
             </span>
             <span className="rounded-full border border-white/20 bg-white/5 px-4 py-2 text-sm text-white/85">
-              Performance
+              Problem Solving
+            </span>
+            <span className="rounded-full border border-white/20 bg-white/5 px-4 py-2 text-sm text-white/85">
+              Clean Code
             </span>
           </div>
         </motion.div>
