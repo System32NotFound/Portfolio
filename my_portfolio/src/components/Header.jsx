@@ -2,18 +2,21 @@ import styles from "./Header.module.css";
 
 const navItems = [
   { href: "#projects", label: "Projects" },
+  { href: "#experience", label: "Experience" },
   { href: "#skills", label: "Skills" },
   { href: "#about", label: "About" },
   { href: "#contact", label: "Contact" },
-  { href: "#experience", label: "Experience" },
-
 ];
 
 export default function Header() {
   return (
     <header className={styles.header}>
       <div className={styles.inner}>
-        <a className={styles.brand} href="#top" aria-label="Go to top">
+        <a
+          href="#top"
+          className={styles.brand}
+          aria-label="Go to top of page"
+        >
           RB
         </a>
 
