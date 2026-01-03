@@ -1,12 +1,38 @@
 export const projects = [
-
+{
+  slug: "portfolio-website",
+  title: "Personal Portfolio Website",
+  subtitle: "React, Tailwind CSS, Framer Motion",
+  year: "2026",
+  description:
+    "A responsive, accessible personal portfolio built to showcase projects, experience, and skills with a focus on clean architecture and thoughtful UI design.",
+  highlights: [
+    "Designed and built from scratch using modern React functional components",
+    "Implemented smooth, accessible animations using Framer Motion with reduced-motion support",
+    "Created a responsive layout optimized for mobile, tablet, and desktop",
+    "Focused on semantic HTML, keyboard navigation, and accessibility best practices",
+    "Deployed using Vercel with CI-based production builds"
+  ],
+  tech: [
+    "React",
+    "Tailwind CSS",
+    "Framer Motion",
+    "JavaScript",
+    "Accessibility",
+    "Vercel"
+  ],
+  links: {
+    live: "https://rohan-bansal.vercel.app",
+    code: "https://github.com/System32NotFound/Portfolio"
+  }
+},
 {
     slug: "sentiment-analysis-dashboard",
     title: "Sentiment Analysis Dashboard",
     year: "2024",
     role: "Data analytics and ML",
     description:
-      "Analyzed Twitter sentiment and presented insights in a clear dashboard, then trained models to classify sentiment.",
+      "Analyzed Covid Vaccination Twitter data and presented insights in a clear dashboard, then trained models to classify sentiment.",
     impact:
       "Achieved over 80 percent classification accuracy across multiple approaches and communicated results through a dashboard.",
     highlights: [
@@ -17,7 +43,7 @@ export const projects = [
     tech: ["Python", "SQL", "Power BI", "Django", "ML"],
     links: {
       live: null,
-      repo: null,
+      repo: "https://github.com/System32NotFound/Vaccination_sentiment",
     },
   },
   {
@@ -37,7 +63,7 @@ export const projects = [
     tech: ["Python", "Mininet", "Network Security", "Traffic Analysis"],
     links: {
       live: null,
-      repo: null,
+      repo: "https://github.com/System32NotFound/ICS_Project",
     },
   },
   {
@@ -56,7 +82,7 @@ export const projects = [
     ],
     tech: ["JavaScript", "HTML", "CSS"],
     links: {
-      live: "https://www.thesanctuarytree.com.au/",
+      live: "https://www.donaldcoaccounting.com/",
       repo: null,
     },
   }

@@ -10,6 +10,11 @@ body {
   margin: 0;
   background: #070A12;
 }
+
+html, body {
+  overflow-x: hidden;
+}
+
 :root {
   scroll-padding-top: 96px;
 }

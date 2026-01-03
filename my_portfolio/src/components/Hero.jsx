@@ -10,10 +10,13 @@ export default function Hero() {
   return (
     <section className="relative min-h-screen overflow-hidden bg-[#070A12] text-white">
       {/* Background layers */}
-      <div className="pointer-events-none absolute inset-0">
+      <div className="pointer-events-none absolute inset-0 overflow-hidden">
         <div className="absolute -top-48 left-1/2 h-[520px] w-[520px] -translate-x-1/2 rounded-full bg-indigo-400/30 blur-3xl" />
         <div className="absolute top-24 -left-32 h-[520px] w-[520px] rounded-full bg-fuchsia-400/20 blur-3xl" />
-        <div className="absolute -bottom-40 right-[-140px] h-[560px] w-[560px] rounded-full bg-emerald-300/20 blur-3xl" />
+
+        {/* This one was most likely causing horizontal overflow on small screens */}
+        <div className="absolute -bottom-40 right-0 h-[560px] w-[560px] translate-x-1/3 rounded-full bg-emerald-300/20 blur-3xl" />
+
         <div className="absolute inset-0 bg-gradient-to-b from-white/5 via-transparent to-transparent" />
       </div>
 
@@ -26,21 +29,21 @@ export default function Hero() {
             transition={{ duration: 0.8, ease: baseEase }}
             className="text-sm font-medium tracking-wide text-white/70"
           >
-            Entry level software developer with experience across web development, data analysis, and production ready projects.
-
+            Entry level software developer with experience across web development,
+            data analysis, and production ready projects.
           </motion.p>
 
           {/* Name: letter reveal */}
           <h1
             aria-label={name}
-            className="mt-4 flex flex-wrap text-[clamp(64px,9vw,124px)] font-semibold leading-[0.95] tracking-tight"
+            className="mt-4 flex flex-wrap font-semibold leading-[0.95] tracking-tight
+                       text-[clamp(44px,12vw,124px)] sm:text-[clamp(64px,9vw,124px)]"
+            style={{ overflowWrap: "anywhere" }}
           >
             {name.split("").map((char, i) => (
               <motion.span
                 key={i}
-                initial={
-                  reduceMotion ? { opacity: 1 } : { opacity: 0, y: 42 }
-                }
+                initial={reduceMotion ? { opacity: 1 } : { opacity: 0, y: 42 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{
                   duration: 0.9,
@@ -65,7 +68,8 @@ export default function Hero() {
             }}
             className="mt-8 max-w-2xl text-lg leading-relaxed text-white/80 sm:text-xl"
           >
-            Experience across React apps, data dashboards, and applied machine learning projects.
+            Experience across React apps, data dashboards, and applied machine
+            learning projects.
           </motion.p>
 
           {/* Actions */}
