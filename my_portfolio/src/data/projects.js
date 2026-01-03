@@ -3,7 +3,7 @@ export const projects = [
   slug: "portfolio-website",
   title: "Personal Portfolio Website",
   subtitle: "React, Tailwind CSS, Framer Motion",
-  year: "2026",
+  year: "2025",
   description:
     "A responsive, accessible personal portfolio built to showcase projects, experience, and skills with a focus on clean architecture and thoughtful UI design.",
   highlights: [

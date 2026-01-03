@@ -16,7 +16,7 @@ export const experiences = [
     id: "gohbrothers-dev-2020",
     company: "Goh Brothers Motor",
     title: "Software Developer (Contract)",
-    location: "Malaysia",
+    location: "Malaysia", 
     dates: "Mar 2020 to Aug 2020",
     bullets: [
       "Developed a staff and client management system with responsive UI and clear workflows.",
