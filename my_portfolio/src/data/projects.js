@@ -33,7 +33,6 @@ export const projects = [
     role: "Data analytics and ML",
     description:
       "Analyzed Covid Vaccination Twitter data and presented insights in a clear dashboard, then trained models to classify sentiment.",
-      "Analyzed Covid Vaccination Twitter data and presented insights in a clear dashboard, then trained models to classify sentiment.",
     impact:
       "Achieved over 80 percent classification accuracy across multiple approaches and communicated results through a dashboard.",
     highlights: [
@@ -44,7 +43,6 @@ export const projects = [
     tech: ["Python", "SQL", "Power BI", "Django", "ML"],
     links: {
       live: null,
-      repo: "https://github.com/System32NotFound/Vaccination_sentiment",
       repo: "https://github.com/System32NotFound/Vaccination_sentiment",
     },
   },
@@ -66,7 +64,6 @@ export const projects = [
     links: {
       live: null,
       repo: "https://github.com/System32NotFound/ICS_Project",
-      repo: "https://github.com/System32NotFound/ICS_Project",
     },
   },
   {
@@ -85,7 +82,6 @@ export const projects = [
     ],
     tech: ["JavaScript", "HTML", "CSS"],
     links: {
-      live: "https://www.donaldcoaccounting.com/",
       live: "https://www.donaldcoaccounting.com/",
       repo: null,
     },
