@@ -68,8 +68,7 @@ export default function Hero() {
             }}
             className="mt-8 max-w-2xl text-lg leading-relaxed text-white/80 sm:text-xl"
           >
-            Experience across React apps, data dashboards, and applied machine
-            learning projects.
+            Experience building production ready web applications, data dashboards, and applied machine learning projects.
           </motion.p>
 
           {/* Actions */}
